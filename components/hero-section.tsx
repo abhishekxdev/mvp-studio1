@@ -69,7 +69,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="w-full pt-24 pb-16 md:pt-36 md:pb-20 overflow-hidden relative z-10">
+    <section className="w-full pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden relative z-10">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl relative z-10">
         {/* Hero content */}
         <div className="flex flex-col items-center text-center space-y-6 md:space-y-8 max-w-3xl mx-auto">
