@@ -45,7 +45,6 @@ export function Navbar() {
           </nav>
           
           <div className="hidden md:flex items-center space-x-6 ml-16">
-            
             <a
               href="https://calendly.com/vishnoiabhishek29/30min"
               target="_blank"
@@ -73,7 +72,7 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-md border border-border/10 rounded-full absolute w-full">
+          <div className="md:hidden bg-background/95 backdrop-blur-md border border-border/10 rounded-2xl absolute w-full mt-2">
             <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
               <Link 
                 href="#services" 
@@ -104,9 +103,6 @@ export function Navbar() {
                 FAQ
               </Link>
               <div className="flex flex-col space-y-3 pt-6 mt-2 border-t border-border/10">
-                <Button variant="outline" className="w-full justify-center rounded-full border-border/30 hover:bg-primary/10">
-                  View Work
-                </Button>
                 <a
                   href="https://calendly.com/vishnoiabhishek29/30min"
                   target="_blank"
@@ -114,7 +110,7 @@ export function Navbar() {
                   className="px-6 py-3 rounded-full border border-indigo-500/20 bg-[radial-gradient(35%_63%_at_50%_50%,_#6366f1_0%,_#4338ca_100%)] shadow-[inset_0_1px_3px_rgba(255,255,255,0.3),_0_4px_10px_rgba(99,102,241,0.3)] transition-all duration-300 hover:brightness-110 active:scale-[0.98] w-full flex items-center justify-center"
                 >
                   <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-[Manrope,sans-serif]">
-                    Let's Build Your Idea
+                    Book a Call
                   </span>
                 </a>
               </div>

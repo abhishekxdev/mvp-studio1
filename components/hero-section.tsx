@@ -69,15 +69,15 @@ export function HeroSection() {
   }
 
   return (
-    <section className="w-full pt-36 pb-20 md:pt-40 md:pb-24 overflow-hidden relative z-10">
+    <section className="w-full pt-24 pb-16 md:pt-36 md:pb-20 overflow-hidden relative z-10">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl relative z-10">
         {/* Hero content */}
-        <div className="flex flex-col items-center text-center space-y-8 md:space-y-10 max-w-3xl mx-auto">
+        <div className="flex flex-col items-center text-center space-y-6 md:space-y-8 max-w-3xl mx-auto">
           <AnimatedBadge className="px-4 py-2 text-xs font-medium tracking-wider text-white bg-white/10 backdrop-blur-sm">
             SLOTS AVAILABLE 
           </AnimatedBadge>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-manrope font-semibold tracking-tight text-white">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-manrope font-semibold tracking-tight text-white">
             Start Smart With MVPs that{" "}
             <span className="inline-block bg-gradient-to-r from-indigo-400 via-blue-400 to-indigo-500 text-transparent bg-clip-text animate-gradient">
               Dominate
@@ -88,11 +88,11 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-          Launch with confidence — we develop MVPs across Web, Mobile, and AI to help you validate before scaling.
+          <p className="text-base md:text-lg text-gray-200 max-w-2xl mx-auto px-4">
+            Launch with confidence — we develop MVPs across Web, Mobile, and AI to help you validate before scaling.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center w-full">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center w-full px-4">
             <a
               href="https://calendly.com/vishnoiabhishek29/30min"
               target="_blank"
@@ -100,24 +100,23 @@ export function HeroSection() {
               className="px-6 py-3 rounded-full border border-indigo-500/20 bg-[radial-gradient(35%_63%_at_50%_50%,_#6366f1_0%,_#4338ca_100%)] shadow-[inset_0_1px_3px_rgba(255,255,255,0.3),_0_4px_10px_rgba(99,102,241,0.3)] transition-all duration-300 hover:brightness-110 active:scale-[0.98] inline-flex items-center justify-center"
             >
               <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-[Manrope,sans-serif]">
-                Book an Intro Call
+                Book a Call
               </span>
             </a>
-            
           </div>
         </div>
 
         {/* Client logos section */}
-        <div className="mt-16 md:mt-20 max-w-4xl mx-auto">
-          <h3 className="text-xs uppercase tracking-wider text-center font-medium mb-8 text-gray-400">
+        <div className="mt-12 md:mt-16 max-w-4xl mx-auto">
+          <h3 className="text-xs uppercase tracking-wider text-center font-medium mb-6 md:mb-8 text-gray-400">
             Trusted by 15+ Startup Founders and Entrepreneurs
           </h3>
 
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll">
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-4 md:space-x-6">
                 {Array.from({ length: 12 }).map((_, i) => (
-                  <div key={i} className="flex-shrink-0 h-8 w-24 relative">
+                  <div key={i} className="flex-shrink-0 h-6 md:h-8 w-16 md:w-24 relative">
                     <Image
                       src={clientLogos[i % clientLogos.length]}
                       alt={`Client Logo ${i + 1}`}
@@ -127,9 +126,9 @@ export function HeroSection() {
                   </div>
                 ))}
               </div>
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-4 md:space-x-6">
                 {Array.from({ length: 12 }).map((_, i) => (
-                  <div key={`clone-${i}`} className="flex-shrink-0 h-8 w-24 relative">
+                  <div key={`clone-${i}`} className="flex-shrink-0 h-6 md:h-8 w-16 md:w-24 relative">
                     <Image
                       src={clientLogos[i % clientLogos.length]}
                       alt={`Client Logo ${i + 1}`}
@@ -144,8 +143,8 @@ export function HeroSection() {
         </div>
 
         {/* Work showcase section */}
-        <div id="work" className="mt-16 md:mt-24">
-          <div className="max-w-4xl mx-auto">
+        <div id="work" className="mt-12 md:mt-16">
+          <div className="max-w-4xl mx-auto px-4">
             <div className="relative rounded-xl border border-white/10 overflow-hidden group">
               <div className="relative w-full aspect-[16/9]">
                 {workItems[currentWork].image.endsWith('.mov') ? (
@@ -167,14 +166,14 @@ export function HeroSection() {
                 )}
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">{workItems[currentWork].title}</h3>
-                  <p className="text-gray-300">{workItems[currentWork].description}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                  <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">{workItems[currentWork].title}</h3>
+                  <p className="text-sm md:text-base text-gray-300">{workItems[currentWork].description}</p>
                 </div>
               </div>
             </div>
             
-            <div className="flex justify-center items-center space-x-4 mt-6">
+            <div className="flex justify-center items-center space-x-4 mt-4 md:mt-6">
               <Button
                 variant="outline"
                 size="icon"
