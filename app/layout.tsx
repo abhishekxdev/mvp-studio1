@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'MVP Studio',
     images: [
       {
-        url: '/opengraph.png',
+        url: '/images/opengraph.png',
         width: 1200,
         height: 630,
         alt: 'MVP Studio Preview',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MVP Studio - Design That Drives Results',
     description: 'We design and develop high-converting websites and apps that help startups launch faster and scale smarter.',
-    images: ['/opengraph.png'],
+    images: ['/images/opengraph.png'],
   },
   robots: {
     index: true,
