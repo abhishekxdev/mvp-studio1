@@ -26,9 +26,6 @@ const workItems = [
     title: "XAuto - Social Media Automotive Platform",
     description: "Development"
   },
-  
-  
-  
   {
     id: 5,
     image: "/images/gamify.jpg",
