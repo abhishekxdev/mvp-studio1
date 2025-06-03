@@ -92,7 +92,7 @@ export function HeroSection() {
             Launch with confidence — we develop MVPs across Web, Mobile, and AI to help you validate before scaling.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center w-full px-4 mb-16 md:mb-24">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center w-full px-4 mb-24 md:mb-32">
             <a
               href="https://calendly.com/vishnoiabhishek29/30min"
               target="_blank"
