@@ -16,7 +16,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 relative">
               <Image
-                src="/logomvp.png"
+                src="/images/logomvp.png"
                 alt="MVP Studio Logo"
                 fill
                 className="object-contain"

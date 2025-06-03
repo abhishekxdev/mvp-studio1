@@ -10,19 +10,19 @@ import Image from 'next/image'
 const workItems = [
   {
     id: 1,
-    image: "/Nurodeep1.mov",
+    image: "/images/Nurodeep1.mov",
     title: "NuroDeep - AI Powered Dashboard",
     description: "UI/UX Design • Development"
   },
   {
     id: 2,
-    image: "/VorkelAi Snap.png",
+    image: "/images/VorkelAI Snap.png",
     title: "VorkelAI - AI-Powered Platform",
     description: "UI/UX Design • Development"
   },
   {
     id: 3,
-    image: "/xauto.png",
+    image: "/images/xauto.png",
     title: "XAuto - Social Media Automotive Platform",
     description: "Development"
   },
@@ -31,19 +31,19 @@ const workItems = [
   
   {
     id: 5,
-    image: "/gamify.jpg",
+    image: "/images/gamify.jpg",
     title: "Gamify - Game Progresss Tracker",
     description: "App • Development"
   },
   {
     id: 5,
-    image: "/phantom.png",
+    image: "/images/phantom1.png",
     title: "Phantom - Task Organizer Dashboard",
     description: "Design • Development"
   },
   {
     id: 4,
-    image: "/horizon.png",
+    image: "/images/Horizon.png",
     title: "Horizon - Modern Dashboard",
     description: "UI/UX Design • Development"
   }

@@ -57,7 +57,7 @@ export default function RootLayout({
       <body className={cn(inter.variable, manrope.variable, "font-sans text-foreground relative min-h-screen")}>
         <div className="fixed inset-0 z-0">
           <Image
-            src="/utility.png"
+            src="/images/utility.png"
             alt="Background"
             fill
             className="object-cover"
