@@ -148,12 +148,23 @@ export function HeroSection() {
           <div className="max-w-4xl mx-auto">
             <div className="relative rounded-xl border border-white/10 overflow-hidden group">
               <div className="relative w-full aspect-[16/9]">
-                <Image
-                  src={workItems[currentWork].image}
-                  alt={workItems[currentWork].title}
-                  fill
-                  className="object-contain"
-                />
+                {workItems[currentWork].image.endsWith('.mov') ? (
+                  <video
+                    src={workItems[currentWork].image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-contain w-full h-full"
+                  />
+                ) : (
+                  <Image
+                    src={workItems[currentWork].image}
+                    alt={workItems[currentWork].title}
+                    fill
+                    className="object-contain"
+                  />
+                )}
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60">
                 <div className="absolute bottom-0 left-0 right-0 p-6">
