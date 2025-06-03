@@ -65,7 +65,7 @@ export function FooterSection() {
           <div className="md:col-span-1 flex justify-end items-start">
             <div className="relative w-68 h-68 -mt-20">
               <img
-                src="/callbook.png"
+                src="/images/callbook.png"
                 alt="Call Booking"
                 className="object-contain w-full h-full"
               />
