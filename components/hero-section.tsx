@@ -77,7 +77,7 @@ export function HeroSection() {
         {/* Hero content */}
         <div className="flex flex-col items-center text-center space-y-8 md:space-y-10 max-w-3xl mx-auto">
           <AnimatedBadge className="px-4 py-2 text-xs font-medium tracking-wider text-white bg-white/10 backdrop-blur-sm">
-            SLOTS AVAILABLE FOR JUNE
+            SLOTS AVAILABLE 
           </AnimatedBadge>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-manrope font-semibold tracking-tight text-white">
