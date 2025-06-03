@@ -7,33 +7,23 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 const testimonials = [
   {
     id: 1,
-    
     role: 'Vorkel AI',
     quote: 'Working with this team was a game-changer for our startup. The designs not only looked incredible but directly contributed to our conversion rates increasing by 43%. Worth every penny.'
   },
   {
     id: 2,
-    
     role: 'XAuto',
     quote: 'We had nothing but an idea. In just a few weeks, we had a fully functional MVP that looked like a real product. Their work gave us the confidence to start pitching and testing immediately.'
   },
   {
     id: 3,
-    
     role: 'Gamify',
     quote: 'They turned our rough notes and scattered ideas into a usable MVP we could actually demo. It was the first time we saw our product come to life — and it exceeded expectations.'
   },
   {
     id: 4,
-    
     role: 'Phantom',
     quote: 'Working with them felt like adding a full-stack product team to our startup. Fast communication, thoughtful feedback, and real ownership of the product vision.'
-  },
-  {
-    id: 5,
-    
-    role: 'Horizon',
-    quote: 'We had nothing but an idea. In just a few weeks, we had a fully functional MVP that looked like a real product. Their work gave us the confidence to start pitching and testing immediately.'
   }
 ]
 
@@ -78,8 +68,7 @@ export function TestimonialsSection() {
                     </p>
                     
                     <div className="flex flex-col items-center">
-                      <p className="font-semibold text-lg">{testimonials[activeIndex].name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonials[activeIndex].role}</p>
+                      <p className="font-semibold text-lg">{testimonials[activeIndex].role}</p>
                     </div>
                   </div>
                 </div>
