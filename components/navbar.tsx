@@ -26,25 +26,25 @@ export function Navbar() {
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 ml-8">
-            <Link href="#services" className="text-sm font-helvetica font-normal text-foreground/80 hover:text-primary transition-colors">
-              Services
-            </Link>
-            <Link
-              href="#work"
-              className="text-sm font-helvetica font-normal text-muted-foreground transition-colors hover:text-primary"
+          <div className="hidden md:flex items-center space-x-4 ml-auto">
+            <a
+              href="#pricing"
+              className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
             >
-              Work
-            </Link>
-            <Link href="#pricing" className="text-sm font-helvetica font-normal text-foreground/80 hover:text-primary transition-colors">
-              Pricing
-            </Link>
-            <Link href="#faq" className="text-sm font-helvetica font-normal text-foreground/80 hover:text-primary transition-colors">
-              FAQ
-            </Link>
-          </nav>
-          
-          <div className="hidden md:flex items-center space-x-6 ml-16">
+              <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                Plans
+              </span>
+            </a>
+            
+            <a
+              href="#work"
+              className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
+            >
+              <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                View Work
+              </span>
+            </a>
+            
             <a
               href="https://calendly.com/vishnoiabhishek29/30min"
               target="_blank"
@@ -74,46 +74,37 @@ export function Navbar() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-background/95 backdrop-blur-md border border-border/10 rounded-2xl absolute w-full mt-2">
             <nav className="px-4 py-6 flex flex-col space-y-4">
-              <Link 
-                href="#services" 
-                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
+              <a
+                href="#pricing"
+                className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Services
-              </Link>
-              <Link 
-                href="#work" 
-                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
+                <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                  Plans
+                </span>
+              </a>
+              
+              <a
+                href="#work"
+                className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Work
-              </Link>
-              <Link 
-                href="#pricing" 
-                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
+                <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                  View Work
+                </span>
+              </a>
+              
+              <a
+                href="https://calendly.com/vishnoiabhishek29/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Pricing
-              </Link>
-              <Link 
-                href="#faq" 
-                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                FAQ
-              </Link>
-              <div className="flex flex-col space-y-3 pt-6 mt-2 border-t border-border/10">
-                <a
-                  href="https://calendly.com/vishnoiabhishek29/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
-                >
-                  <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
-                    Book a Call
-                  </span>
-                </a>
-              </div>
+                <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                  Let's Build Your Idea
+                </span>
+              </a>
             </nav>
           </div>
         )}
