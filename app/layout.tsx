@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'We build MVPs that founders love',
     images: [
       {
-        url: '/images/open.png',
+        url: '/images/opengraph.png',
         width: 1200,
         height: 630,
         alt: 'MVP Studio - We build MVPs that founders love',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MVP Studio',
     description: 'We build MVPs that founders love',
-    images: ['/images/open.png'],
+    images: ['/images/opengraph.png'],
   },
 };
 
