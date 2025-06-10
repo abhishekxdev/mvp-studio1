@@ -12,7 +12,7 @@ const workItems = [
         title: "NuroDeep - AI Powered Dashboard",
         description: "A comprehensive AI-powered analytics dashboard that helps businesses make data-driven decisions with real-time insights and predictive analytics.",
         category: "AI • Dashboard",
-       
+        technologies: []
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const workItems = [
         title: "VorkelAI - AI-Powered Platform",
         description: "An intelligent automation platform that streamlines business processes using advanced AI algorithms and machine learning capabilities.",
         category: "AI • Automation",
-       
+        technologies: []
     },
     {
         id: 3,
@@ -28,15 +28,15 @@ const workItems = [
         title: "Phantom - Task Organizer Dashboard",
         description: "A sleek task management system that helps teams organize, prioritize, and track their work with intuitive interfaces and powerful collaboration tools.",
         category: "Productivity • Dashboard",
-        
+        technologies: []
     },
     {
         id: 4,
         image: "/images/Horizon.png",
         title: "Horizon - AI Conversation Agent",
         description: "Horizon – AI Conversation Agent is an autonomous AI that doesn’t just chat — it joins calls, understands conversations in real-time, and gets things done. Built for modern teams and customer-facing operations, Horizon acts like a smart teammate that listens, responds, and takes action across meetings, support calls, and internal processes.",
-        category: "AI Agent • Enterprise",
-        
+        category: "Analytics • Enterprise",
+        technologies: []
     },
     {
         id: 5,
@@ -44,15 +44,15 @@ const workItems = [
         title: "CRM - Customer Relationship Management",
         description: "A comprehensive CRM solution that helps businesses manage customer relationships, track sales pipelines, and automate marketing campaigns.",
         category: "CRM • Sales",
-      
+        technologies: []
     },
     {
         id: 6,
         image: "/images/don.png",
-        title: "NebulaFlow - Automation Platform",
+        title: "NebulaFlow- AI Automation",
         description: "NebulaFlow is an advanced AI automation platform designed to streamline complex workflows, eliminate repetitive tasks, and accelerate business operations. With a no-code interface and powerful AI-driven logic, NebulaFlow enables teams to build, deploy, and manage intelligent automations across departments—from customer support and marketing to operations and development.",
-        category: "SaaS • AI",
-       
+        category: "AI • Automation",
+        technologies: []
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const workItems = [
         title: "EmailAI - AI-Powered Email Assistant",
         description: "An intelligent email management system that uses AI to categorize, prioritize, and suggest responses for improved productivity.",
         category: "AI • Communication",
-      
+        technologies: []
     },
     {
         id: 8,
@@ -68,7 +68,7 @@ const workItems = [
         title: "Outreach - Marketing Automation Platform",
         description: "A comprehensive marketing automation platform that helps businesses create, manage, and optimize their outreach campaigns across multiple channels.",
         category: "Marketing • Automation",
-        
+        technologies: []
     }
 ]
 
