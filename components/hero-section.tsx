@@ -104,7 +104,7 @@ export function HeroSection() {
                             <AnimatedBadge className="mb-4 text-white">15+ MVPs Delivered</AnimatedBadge>
                             <TextEffect
                                 as="h1"
-                                className="text-5xl md:text-7xl lg:text-8xl font-normal tracking-tight mb-6 text-left font-['Helvetica']"
+                                className="text-5xl md:text-7xl lg:text-8xl font-normal tracking-tight mb-6 text-left font-inter"
                                 preset="fade-in-blur"
                                 per="line"
                             >
@@ -127,14 +127,14 @@ export function HeroSection() {
                                     },
                                     ...transitionVariants,
                                 }}
-                                className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
+                                className="mt-12 flex flex-col items-start justify-start gap-2 md:flex-row">
                                 <a
                                     href="https://calendly.com/vishnoiabhishek29/30min"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
                                 >
-                                    <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-[Manrope,sans-serif]">
+                                    <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-inter">
                                         Book An Intro Call
                                     </span>
                                 </a>
@@ -190,8 +190,8 @@ export function HeroSection() {
                                 </div>
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60">
                                     <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-                                        <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2">{workItems[currentWork].title}</h3>
-                                        <p className="text-sm md:text-base text-gray-300">{workItems[currentWork].description}</p>
+                                        <h3 className="text-lg md:text-xl font-semibold text-white mb-1 md:mb-2 font-inter text-left">{workItems[currentWork].title}</h3>
+                                        <p className="text-sm md:text-base text-gray-300 font-inter text-left">{workItems[currentWork].description}</p>
                                     </div>
                                 </div>
                             </div>
