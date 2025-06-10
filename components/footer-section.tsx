@@ -2,8 +2,12 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 export function FooterSection() {
+  const pathname = usePathname()
+  const isWorkPage = pathname === '/work'
+
   return (
     <footer className="w-full py-20 md:py-32 relative">
       <div className="relative z-10">
@@ -24,15 +28,17 @@ export function FooterSection() {
               Book an Intro Call
             </a>
             
-            <Link
-              href="/work"
-              className="px-8 py-4 rounded-full border border-white/20 bg-transparent text-white font-helvetica font-normal text-lg transition-all duration-300 hover:bg-white/10 active:scale-[0.98] inline-flex items-center gap-2"
-            >
-              View Work
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
+            {!isWorkPage && (
+              <Link
+                href="/work"
+                className="px-8 py-4 rounded-full border border-white/20 bg-transparent text-white font-helvetica font-normal text-lg transition-all duration-300 hover:bg-white/10 active:scale-[0.98] inline-flex items-center gap-2"
+              >
+                View Work
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            )}
           </div>
         </div>
         
