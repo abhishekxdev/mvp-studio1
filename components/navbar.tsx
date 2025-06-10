@@ -13,8 +13,8 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 mt-4">
       <div className="max-w-5xl mx-auto bg-background/80 backdrop-blur-md border border-border/20 rounded-full">
         <div className="px-4 md:px-6 flex items-center justify-between py-3">
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 relative">
+          <Link href="/" className="flex items-center space-x-4">
+            <div className="w-12 h-12 relative">
               <Image
                 src="/images/logomvp.png"
                 alt="MVP Studio Logo"
@@ -22,7 +22,7 @@ export function Navbar() {
                 className="object-contain"
               />
             </div>
-            <span className="font-helvetica font-normal text-lg">MVP Studio</span>
+            <span className="font-helvetica font-normal text-xl">MVP Studio</span>
           </Link>
           
           {/* Desktop Navigation */}
