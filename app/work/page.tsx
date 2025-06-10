@@ -134,7 +134,7 @@ function WorkCard({ item }: WorkCardProps) {
         <div className="group relative overflow-hidden rounded-xl border border-white/20 bg-black hover:bg-black/80 transition-all duration-300 backdrop-blur-sm">
             <div className="flex flex-col lg:flex-row">
                 {/* Image Section - Wider for better visibility */}
-                <div className="relative w-full lg:w-2/3 h-80 lg:h-96 overflow-hidden">
+                <div className="relative w-full lg:w-2/3 h-80 lg:h-96 overflow-hidden rounded-l-xl">
                     {item.image.endsWith('.mov') ? (
                         <video
                             src={item.image}
@@ -142,7 +142,8 @@ function WorkCard({ item }: WorkCardProps) {
                             loop
                             muted
                             playsInline
-                            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            style={{ objectPosition: 'center center' }}
                         />
                     ) : (
                         <Image
@@ -169,7 +170,7 @@ function WorkCard({ item }: WorkCardProps) {
                         {item.description}
                     </p>
                     
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-2">
                         {item.technologies.map((tech, index) => (
                             <span
                                 key={index}
@@ -178,13 +179,6 @@ function WorkCard({ item }: WorkCardProps) {
                                 {tech}
                             </span>
                         ))}
-                    </div>
-                    
-                    <div className="flex items-center justify-between">
-                        <button className="text-white/80 hover:text-white transition-colors font-helvetica">
-                            View Details
-                        </button>
-                        <ExternalLink className="w-5 h-5 text-white/60 group-hover:text-white transition-colors" />
                     </div>
                 </div>
             </div>
