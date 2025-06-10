@@ -2,99 +2,55 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { Instagram, Linkedin, ArrowUpRight } from 'lucide-react'
 
 export function FooterSection() {
   return (
-    <footer className="w-full py-12 md:py-20 relative">
+    <footer className="w-full py-20 md:py-32 relative">
       <div className="relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16 reveal">
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 relative">
-                <Image
-                  src="/images/logomvp.png"
-                  alt="MVP Studio Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="font-helvetica font-normal text-xl">MVP Studio</span>
-            </div>
+        {/* Main Content */}
+        <div className="mb-16">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-helvetica font-normal mb-12 text-left text-white leading-tight">
+            Let's Build Something<br />
+            People Remember
+          </h1>
+          
+          <div className="flex flex-col md:flex-row gap-4 items-start">
+            <a
+              href="https://calendly.com/vishnoiabhishek29/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-full bg-white text-black font-helvetica font-normal text-lg transition-all duration-300 hover:bg-gray-100 active:scale-[0.98] inline-flex items-center"
+            >
+              Book an Intro Call
+            </a>
             
-            <p className="text-muted-foreground font-helvetica mb-6 max-w-md text-left">
-            Your next product deserves better than templates. Let's build it right.
-            </p>
-            
-            {/* View Work Button in Footer */}
             <Link
               href="/work"
-              className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
+              className="px-8 py-4 rounded-full border border-white/20 bg-transparent text-white font-helvetica font-normal text-lg transition-all duration-300 hover:bg-white/10 active:scale-[0.98] inline-flex items-center gap-2"
             >
-              <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
-                View Our Work
-              </span>
+              View Work
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
-          
-          <div className="md:col-span-1">
-            <h3 className="font-helvetica font-normal text-lg mb-4 text-left">Contact</h3>
-            <div className="space-y-3 text-muted-foreground text-left">
-              <p className="font-helvetica">support@mvpstudio.in</p>
-              <p></p>
-              <a
-                href="https://calendly.com/vishnoiabhishek29/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full border border-indigo-500/20 bg-[radial-gradient(35%_63%_at_50%_50%,_#6366f1_0%,_#4338ca_100%)] shadow-[inset_0_1px_3px_rgba(255,255,255,0.3),_0_4px_10px_rgba(99,102,241,0.3)] transition-all duration-300 hover:brightness-110 active:scale-[0.98] inline-flex items-center"
-              >
-                <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
-                  Book a Call
-                </span>
-              </a>
-            </div>
+        </div>
+        
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end pt-16 border-t border-white/10">
+          <div className="mb-4 md:mb-0">
+            <p className="text-white/60 font-helvetica font-normal">
+              © MVP Studio 2025
+            </p>
           </div>
-
-          <div className="md:col-span-1 flex justify-start items-start">
-            <div className="relative w-68 h-68 -mt-20">
-              <img
-                src="/images/callbook.png"
-                alt="Call Booking"
-                className="object-contain w-full h-full"
-              />
-            </div>
+          
+          <div className="text-right">
+            <p className="text-white/60 font-helvetica font-normal">
+              support@mvpstudio.in
+            </p>
           </div>
         </div>
       </div>
     </footer>
-  )
-}
-
-function Calendar(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-      <line x1="16" x2="16" y1="2" y2="6" />
-      <line x1="8" x2="8" y1="2" y2="6" />
-      <line x1="3" x2="21" y1="10" y2="10" />
-      <path d="M8 14h.01" />
-      <path d="M12 14h.01" />
-      <path d="M16 14h.01" />
-      <path d="M8 18h.01" />
-      <path d="M12 18h.01" />
-      <path d="M16 18h.01" />
-    </svg>
   )
 }
