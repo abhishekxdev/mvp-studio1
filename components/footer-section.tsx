@@ -14,7 +14,7 @@ export function FooterSection() {
         {/* Main Content */}
         <div className="mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-helvetica font-normal mb-12 text-left text-white leading-tight">
-           Let’s Create What Users Can’t Forget<br />
+           Let's Create What Users Can't Forget<br />
           
           </h1>
           
@@ -23,17 +23,21 @@ export function FooterSection() {
               href="https://calendly.com/vishnoiabhishek29/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-full bg-white text-black font-helvetica font-normal text-lg transition-all duration-300 hover:bg-gray-100 active:scale-[0.98] inline-flex items-center"
+              className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
             >
-              Book an Intro Call
+              <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                Book an Intro Call
+              </span>
             </a>
             
             {!isWorkPage && (
               <Link
                 href="/work"
-                className="px-8 py-4 rounded-full border border-white/20 bg-transparent text-white font-helvetica font-normal text-lg transition-all duration-300 hover:bg-white/10 active:scale-[0.98] inline-flex items-center gap-2"
+                className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center gap-2"
               >
-                View Work
+                <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                  View Work
+                </span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
