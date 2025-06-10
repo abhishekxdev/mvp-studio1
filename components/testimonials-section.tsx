@@ -61,7 +61,7 @@ export function TestimonialsSection() {
                   <Quote className="w-16 h-16 text-white" />
                 </div>
                 
-                <div className="p-8 md:p-12 bg-white/5 rounded-xl border border-white/20 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+                <div className="p-8 md:p-12 bg-black rounded-xl border border-white/20 hover:bg-black/80 transition-all duration-300 backdrop-blur-sm">
                   <div className="relative">
                     <p className="text-xl md:text-2xl text-white font-helvetica italic mb-8 text-left">
                       {testimonials[activeIndex].quote}
@@ -79,7 +79,7 @@ export function TestimonialsSection() {
               <Button 
                 variant="outline" 
                 size="icon" 
-                className="rounded-full h-10 w-10 border-white/20 bg-white/5 hover:bg-white/10 text-white"
+                className="rounded-full h-10 w-10 border-white/20 bg-black hover:bg-black/80 text-white"
                 onClick={handlePrev}
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -88,7 +88,7 @@ export function TestimonialsSection() {
               <Button 
                 variant="outline" 
                 size="icon" 
-                className="rounded-full h-10 w-10 border-white/20 bg-white/5 hover:bg-white/10 text-white"
+                className="rounded-full h-10 w-10 border-white/20 bg-black hover:bg-black/80 text-white"
                 onClick={handleNext}
               >
                 <ChevronRight className="h-5 w-5" />

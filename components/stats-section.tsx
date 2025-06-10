@@ -17,7 +17,7 @@ export function StatsSection() {
           </div>
           
           <div className="mt-16 w-full">
-            <div className="p-8 md:p-12 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+            <div className="p-8 md:p-12 rounded-xl border border-white/20 bg-black hover:bg-black/80 transition-all duration-300 backdrop-blur-sm">
               <div className="relative">
                 <div className="absolute top-0 left-0 opacity-20">
                   <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ interface StatCardProps {
 
 function StatCard({ value, label, prefix = '', suffix = '' }: StatCardProps) {
   return (
-    <div className="p-6 rounded-xl border border-white/20 bg-white/5 flex flex-col items-start text-left backdrop-blur-sm">
+    <div className="p-6 rounded-xl border border-white/20 bg-black flex flex-col items-start text-left backdrop-blur-sm">
       <h3 className="text-4xl md:text-5xl font-helvetica font-normal mb-2 flex items-center text-white">
         <span className="text-primary/90">{prefix}</span>
         <CountUp end={value} duration={2.5} />

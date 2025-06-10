@@ -46,8 +46,8 @@ export function FaqSection() {
       <div className="relative z-10">
         <div className="flex flex-col items-start">
           <div className="flex flex-col items-start space-y-4">
-            <p className="text-sm uppercase tracking-wider text-primary/80 font-helvetica font-normal">FAQs</p>
-            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
+            <p className="text-sm uppercase tracking-wider text-white/80 font-helvetica font-normal">FAQs</p>
+            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left text-white">
               Have Questions? We Have Answers
             </h2>
           </div>
@@ -58,12 +58,12 @@ export function FaqSection() {
                 <AccordionItem 
                   key={index} 
                   value={`item-${index}`}
-                  className="border border-border/20 bg-card/10 rounded-lg px-6 py-2"
+                  className="border border-white/20 bg-black rounded-lg px-6 py-2 hover:bg-black/80 transition-all duration-300 backdrop-blur-sm"
                 >
-                  <AccordionTrigger className="text-left font-helvetica font-normal hover:text-primary hover:no-underline">
+                  <AccordionTrigger className="text-left font-helvetica font-normal hover:text-white hover:no-underline text-white">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground font-helvetica pt-2 pb-4 text-left">
+                  <AccordionContent className="text-white/80 font-helvetica pt-2 pb-4 text-left">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

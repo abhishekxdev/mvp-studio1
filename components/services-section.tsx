@@ -62,7 +62,7 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon, title, description, tags }: ServiceCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/5 p-6 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
+    <div className="group relative overflow-hidden rounded-xl border border-white/20 bg-black p-6 hover:bg-black/80 transition-all duration-300 backdrop-blur-sm">
       <div className="flex flex-col h-full">
         <div className="mb-4 p-3 w-14 h-14 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
           {icon}

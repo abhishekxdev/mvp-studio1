@@ -54,7 +54,7 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="p-6 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 transition-all duration-300 group backdrop-blur-sm">
+    <div className="p-6 rounded-xl border border-white/20 bg-black hover:bg-black/80 transition-all duration-300 group backdrop-blur-sm">
       <div className="mb-4 p-3 w-14 h-14 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
         {icon}
       </div>
