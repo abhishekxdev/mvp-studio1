@@ -43,3 +43,4 @@ Thumbs.db
 
 # Bolt specific
 .bolt/
+.env
