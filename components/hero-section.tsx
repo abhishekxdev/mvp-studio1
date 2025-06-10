@@ -109,11 +109,11 @@ export function HeroSection() {
                                 per="line"
                             >
                                 Start Smart with MVPs that{" "}
-                                <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent italic">
+                                <span className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
                                     Dominate
                                 </span>
                                 {" "}&{" "}
-                                <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent italic">
+                                <span className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
                                     Scale
                                 </span>
                             </TextEffect>
