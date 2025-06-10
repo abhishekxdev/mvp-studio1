@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-black text-white min-h-screen`}>
-        <Navbar />
-        {children}
-        <FooterSection />
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
+          <Navbar />
+          {children}
+          <FooterSection />
+        </div>
       </body>
     </html>
   );

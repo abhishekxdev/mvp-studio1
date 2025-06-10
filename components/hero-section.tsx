@@ -99,8 +99,8 @@ export function HeroSection() {
         <main className="overflow-hidden">
             <section>
                 <div className="relative pt-32 md:pt-44">
-                    <div className="container relative z-10 px-4 md:px-6">
-                        <div className="flex flex-col items-start max-w-4xl mx-0">
+                    <div className="relative z-10">
+                        <div className="flex flex-col items-start">
                             <AnimatedBadge className="mb-4 text-white">15+ MVPs Delivered</AnimatedBadge>
                             <TextEffect
                                 as="h1"
@@ -154,8 +154,8 @@ export function HeroSection() {
                             },
                             ...transitionVariants,
                         }}>
-                        <div className="relative mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20">
-                            <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+                        <div className="relative mt-8 overflow-hidden sm:mt-12 md:mt-20">
+                            <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                 <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
                                     {workItems[currentWork].image.endsWith('.mov') ? (
                                         <div className="absolute inset-0">

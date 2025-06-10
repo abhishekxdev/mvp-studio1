@@ -8,7 +8,7 @@ import { Instagram, Linkedin, ArrowUpRight } from 'lucide-react'
 export function FooterSection() {
   return (
     <footer className="w-full py-12 md:py-20 relative">
-      <div className="container px-4 md:px-6 mx-auto relative z-10">
+      <div className="relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16 reveal">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">

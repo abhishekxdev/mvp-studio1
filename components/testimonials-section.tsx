@@ -41,8 +41,8 @@ export function TestimonialsSection() {
   
   return (
     <section className="w-full py-20 md:py-24 relative">
-      <div className="container px-4 md:px-6 mx-auto max-w-6xl relative z-10">
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+      <div className="relative z-10">
+        <div className="flex flex-col items-center text-center">
           <div className="flex flex-col items-center space-y-4">
             <p className="text-sm uppercase tracking-wider text-primary/80 font-medium">TESTIMONIALS</p>
             <h2 className="text-3xl md:text-4xl font-manrope font-semibold tracking-tight">

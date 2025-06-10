@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect } from 'react'
-import { Navbar } from '@/components/navbar'
 import { HeroSection } from '@/components/hero-section'
 import { WhyUsSection } from '@/components/why-us-section'
 import { StatsSection } from '@/components/stats-section'
@@ -9,7 +8,6 @@ import { ServicesSection } from '@/components/services-section'
 import { TestimonialsSection } from '@/components/testimonials-section'
 import { PricingSection } from '@/components/pricing-section'
 import { FaqSection } from '@/components/faq-section'
-import { FooterSection } from '@/components/footer-section'
 
 export default function Home() {
   useEffect(() => {
@@ -34,7 +32,6 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Navbar />
       <HeroSection />
       <WhyUsSection />
       <StatsSection />
@@ -42,7 +39,6 @@ export default function Home() {
       <TestimonialsSection />
       <PricingSection />
       <FaqSection />
-      <FooterSection />
     </main>
   )
 }

@@ -6,8 +6,8 @@ import Image from 'next/image'
 export function WhyUsSection() {
   return (
     <section className="w-full py-20 md:py-24 relative" id="why-us">
-      <div className="container relative z-10 px-4 md:px-6">
-        <div className="flex flex-col items-start max-w-4xl mx-0">
+      <div className="relative z-10">
+        <div className="flex flex-col items-start">
           <div className="flex flex-col items-start space-y-4">
             <p className="text-sm uppercase tracking-wider text-primary/90 font-medium">WHY US</p>
             <h2 className="text-3xl md:text-4xl font-manrope font-semibold tracking-tight">

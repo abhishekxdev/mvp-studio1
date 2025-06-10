@@ -10,7 +10,7 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 mx-4 mt-4">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 mt-4">
       <div className="max-w-5xl mx-auto bg-background/80 backdrop-blur-md border border-border/20 rounded-full">
         <div className="px-4 md:px-6 flex items-center justify-between py-3">
           <Link href="/" className="flex items-center space-x-3">
@@ -73,7 +73,7 @@ export function Navbar() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-background/95 backdrop-blur-md border border-border/10 rounded-2xl absolute w-full mt-2">
-            <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
+            <nav className="px-4 py-6 flex flex-col space-y-4">
               <Link 
                 href="#services" 
                 className="text-base font-medium py-2 hover:text-primary transition-colors"
