@@ -108,7 +108,7 @@ export function HeroSection() {
                                 preset="fade-in-blur"
                                 per="line"
                             >
-                                We build MVPs that{" "}
+                                Start Smart with MVPs that{" "}
                                 <span className="bg-gradient-to-r from-white via-gray-400 to-gray-200 bg-clip-text text-transparent">
                                     Dominate & Scale
                                 </span>
