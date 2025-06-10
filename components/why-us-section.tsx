@@ -11,7 +11,7 @@ export function WhyUsSection() {
           <div className="flex flex-col items-start space-y-4">
             <p className="text-sm uppercase tracking-wider text-primary/90 font-helvetica font-normal">WHY US</p>
             <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
-            High-Impact MVP Design for Founders Who Move Fast
+            High-Impact MVPs for Founders Who Move Fast
             </h2>
           </div>
           
