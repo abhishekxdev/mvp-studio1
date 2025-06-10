@@ -14,8 +14,8 @@ export function FooterSection() {
         {/* Main Content */}
         <div className="mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-helvetica font-normal mb-12 text-left text-white leading-tight">
-           Build Your Idea<br />
-            In 2 Weeks
+           Let’s Create What Users Can’t Forget<br />
+          
           </h1>
           
           <div className="flex flex-col md:flex-row gap-4 items-start">
