@@ -131,7 +131,7 @@ export function HeroSection() {
                                     },
                                     ...transitionVariants,
                                 }}
-                                className="mt-12 flex flex-col items-start justify-start gap-2 md:flex-row">
+                                className="mt-12 flex flex-col items-start justify-start gap-4 md:flex-row">
                                 <a
                                     href="https://calendly.com/vishnoiabhishek29/30min"
                                     target="_blank"
@@ -142,6 +142,15 @@ export function HeroSection() {
                                         Book An Intro Call
                                     </span>
                                 </a>
+                                
+                                <Link
+                                    href="/work"
+                                    className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
+                                >
+                                    <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
+                                        View Our Work
+                                    </span>
+                                </Link>
                             </AnimatedGroup>
                         </div>
                     </div>

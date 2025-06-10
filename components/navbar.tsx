@@ -28,7 +28,7 @@ export function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4 ml-auto">
             <a
-              href="#pricing"
+              href="/#pricing"
               className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
             >
               <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
@@ -36,14 +36,14 @@ export function Navbar() {
               </span>
             </a>
             
-            <a
-              href="#work"
+            <Link
+              href="/work"
               className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
             >
               <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
                 View Work
               </span>
-            </a>
+            </Link>
             
             <a
               href="https://calendly.com/vishnoiabhishek29/30min"
@@ -75,7 +75,7 @@ export function Navbar() {
           <div className="md:hidden bg-background/95 backdrop-blur-md border border-border/10 rounded-2xl absolute w-full mt-2">
             <nav className="px-4 py-6 flex flex-col space-y-4">
               <a
-                href="#pricing"
+                href="/#pricing"
                 className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -84,15 +84,15 @@ export function Navbar() {
                 </span>
               </a>
               
-              <a
-                href="#work"
+              <Link
+                href="/work"
                 className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
                   View Work
                 </span>
-              </a>
+              </Link>
               
               <a
                 href="https://calendly.com/vishnoiabhishek29/30min"
