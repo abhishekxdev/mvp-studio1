@@ -44,8 +44,8 @@ export function TestimonialsSection() {
       <div className="relative z-10">
         <div className="flex flex-col items-start">
           <div className="flex flex-col items-start space-y-4">
-            <p className="text-sm uppercase tracking-wider text-primary/80 font-helvetica font-normal">TESTIMONIALS</p>
-            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
+            <p className="text-sm uppercase tracking-wider text-white/80 font-helvetica font-normal">TESTIMONIALS</p>
+            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left text-white">
               Hear It Straight from Our Clients
             </h2>
           </div>
@@ -58,17 +58,17 @@ export function TestimonialsSection() {
               <div className="relative">
                 {/* Large quote icon background */}
                 <div className="absolute top-6 left-8 opacity-10">
-                  <Quote className="w-16 h-16" />
+                  <Quote className="w-16 h-16 text-white" />
                 </div>
                 
-                <div className="p-8 md:p-12 bg-card/10 rounded-xl border border-border/20">
+                <div className="p-8 md:p-12 bg-white/5 rounded-xl border border-white/20 hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">
                   <div className="relative">
-                    <p className="text-xl md:text-2xl text-muted-foreground font-helvetica italic mb-8 text-left">
+                    <p className="text-xl md:text-2xl text-white font-helvetica italic mb-8 text-left">
                       {testimonials[activeIndex].quote}
                     </p>
                     
                     <div className="flex flex-col items-start">
-                      <p className="font-helvetica font-normal text-lg text-left">{testimonials[activeIndex].role}</p>
+                      <p className="font-helvetica font-normal text-lg text-left text-white">{testimonials[activeIndex].role}</p>
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export function TestimonialsSection() {
               <Button 
                 variant="outline" 
                 size="icon" 
-                className="rounded-full h-10 w-10"
+                className="rounded-full h-10 w-10 border-white/20 bg-white/5 hover:bg-white/10 text-white"
                 onClick={handlePrev}
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -88,7 +88,7 @@ export function TestimonialsSection() {
               <Button 
                 variant="outline" 
                 size="icon" 
-                className="rounded-full h-10 w-10"
+                className="rounded-full h-10 w-10 border-white/20 bg-white/5 hover:bg-white/10 text-white"
                 onClick={handleNext}
               >
                 <ChevronRight className="h-5 w-5" />
