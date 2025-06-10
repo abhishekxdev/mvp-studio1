@@ -11,7 +11,7 @@ export function WhyUsSection() {
           <div className="flex flex-col items-start space-y-4">
             <p className="text-sm uppercase tracking-wider text-primary/90 font-helvetica font-normal">WHY US</p>
             <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
-            Our process is a blend of art and efficiency. Learn how we take you from concept to launch with a seamless, collaborative approach designed for your success.
+            High-Impact MVP Design for Founders Who Move Fast
             </h2>
           </div>
           
