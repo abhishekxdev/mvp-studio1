@@ -9,7 +9,25 @@ interface TextEffectProps extends Omit<HTMLMotionProps<"div">, "variants"> {
     speedSegment?: number
     delay?: number
     per?: "line" | "word" | "character"
-    as?: keyof JSX.IntrinsicElements
+    as?: "div" | "span" | "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+}
+
+type AnimationPreset = {
+    hidden: {
+        opacity: number
+        filter?: string
+        y: number
+    }
+    visible: {
+        opacity: number
+        filter?: string
+        y: number
+        transition: {
+            type: string
+            bounce: number
+            duration: number
+        }
+    }
 }
 
 export function TextEffect({
@@ -22,9 +40,9 @@ export function TextEffect({
     className,
     ...props
 }: TextEffectProps) {
-    const Component = motion[as as keyof typeof motion]
+    const Component = motion[as]
 
-    const variants: Variants = {
+    const variants: Record<string, AnimationPreset> = {
         "fade-in-blur": {
             hidden: {
                 opacity: 0,
