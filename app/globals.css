@@ -18,11 +18,11 @@
 
 @layer base {
   :root {
-    --background: 17 17 17; /* #111111 */
+    --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
-    --card: 17 17 17; /* #111111 */
+    --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
-    --popover: 17 17 17; /* #111111 */
+    --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
     --primary: 210 100% 50%;
     --primary-foreground: 210 40% 98%;
@@ -46,11 +46,11 @@
   }
 
   .dark {
-    --background: 17 17 17; /* #111111 */
+    --background: 222 47% 5%;
     --foreground: 210 40% 98%;
-    --card: 17 17 17; /* #111111 */
+    --card: 222 47% 7%;
     --card-foreground: 210 40% 98%;
-    --popover: 17 17 17; /* #111111 */
+    --popover: 222 47% 7%;
     --popover-foreground: 210 40% 98%;
     --primary: 217 91% 60%;
     --primary-foreground: 222.2 47.4% 1.2%;
@@ -79,7 +79,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #111111;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
   }
