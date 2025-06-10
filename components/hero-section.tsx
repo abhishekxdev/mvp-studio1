@@ -51,19 +51,19 @@ const workItems = [
     {
         id: 4,
         image: "/images/Horizon.png",
-        title: "Horizon - Modern Dashboard",
+        title: "Horizon - Modern AI Agent",
         description: "UI/UX Design • Development"
     },
     {
         id: 5,
         image: "/images/crm.png",
-        title: "CRM - Customer Relationship Management",
+        title: "HubSpot - Customer Relationship Management",
         description: "UI/UX Design • Development"
     },
     {
         id: 6,
         image: "/images/don.png",
-        title: "Don - Donation Management Platform",
+        title: "NebulaFlow- AI Automation",
         description: "UI/UX Design • Development"
     },
     {
