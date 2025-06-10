@@ -10,10 +10,10 @@ export function ServicesSection() {
   return (
     <section className="w-full py-20 md:py-24 relative" id="services">
       <div className="relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <div className="flex flex-col items-center space-y-4">
-            <p className="text-sm uppercase tracking-wider text-primary/80 font-medium">SERVICES</p>
-            <h2 className="text-3xl md:text-4xl font-manrope font-semibold tracking-tight">
+        <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start space-y-4">
+            <p className="text-sm uppercase tracking-wider text-primary/80 font-helvetica font-normal">SERVICES</p>
+            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
               Experts in Websites, Product, & Branding
             </h2>
           </div>
@@ -68,22 +68,20 @@ function ServiceCard({ icon, title, description, tags }: ServiceCardProps) {
           {icon}
         </div>
         
-        <h3 className="text-xl font-manrope font-semibold mb-2 group-hover:text-primary transition-colors">
+        <h3 className="text-xl font-helvetica font-normal mb-2 group-hover:text-primary transition-colors text-left">
           {title}
         </h3>
         
-        <p className="text-muted-foreground mb-6">{description}</p>
+        <p className="text-muted-foreground font-helvetica mb-6 text-left">{description}</p>
         
         <div className="mt-auto">
           <div className="flex flex-wrap gap-2 mb-6">
             {tags.map((tag, index) => (
-              <Badge key={index} variant="outline" className="bg-background/50">
+              <Badge key={index} variant="outline" className="bg-background/50 font-helvetica">
                 {tag}
               </Badge>
             ))}
           </div>
-          
-         
         </div>
         
         <div className="absolute top-0 right-0 w-24 h-24 opacity-0 group-hover:opacity-10 transition-opacity duration-500">

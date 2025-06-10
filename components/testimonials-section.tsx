@@ -42,10 +42,10 @@ export function TestimonialsSection() {
   return (
     <section className="w-full py-20 md:py-24 relative">
       <div className="relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <div className="flex flex-col items-center space-y-4">
-            <p className="text-sm uppercase tracking-wider text-primary/80 font-medium">TESTIMONIALS</p>
-            <h2 className="text-3xl md:text-4xl font-manrope font-semibold tracking-tight">
+        <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start space-y-4">
+            <p className="text-sm uppercase tracking-wider text-primary/80 font-helvetica font-normal">TESTIMONIALS</p>
+            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
               Hear It Straight from Our Clients
             </h2>
           </div>
@@ -63,19 +63,19 @@ export function TestimonialsSection() {
                 
                 <div className="p-8 md:p-12 bg-card/10 rounded-xl border border-border/20">
                   <div className="relative">
-                    <p className="text-xl md:text-2xl text-muted-foreground italic mb-8">
+                    <p className="text-xl md:text-2xl text-muted-foreground font-helvetica italic mb-8 text-left">
                       {testimonials[activeIndex].quote}
                     </p>
                     
-                    <div className="flex flex-col items-center">
-                      <p className="font-semibold text-lg">{testimonials[activeIndex].role}</p>
+                    <div className="flex flex-col items-start">
+                      <p className="font-helvetica font-normal text-lg text-left">{testimonials[activeIndex].role}</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="flex justify-center mt-8 gap-4">
+            <div className="flex justify-start mt-8 gap-4">
               <Button 
                 variant="outline" 
                 size="icon" 

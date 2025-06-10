@@ -9,8 +9,8 @@ export function WhyUsSection() {
       <div className="relative z-10">
         <div className="flex flex-col items-start">
           <div className="flex flex-col items-start space-y-4">
-            <p className="text-sm uppercase tracking-wider text-primary/90 font-medium">WHY US</p>
-            <h2 className="text-3xl md:text-4xl font-manrope font-semibold tracking-tight">
+            <p className="text-sm uppercase tracking-wider text-primary/90 font-helvetica font-normal">WHY US</p>
+            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
             Our process is a blend of art and efficiency. Learn how we take you from concept to launch with a seamless, collaborative approach designed for your success.
             </h2>
           </div>
@@ -31,9 +31,7 @@ export function WhyUsSection() {
             <FeatureCard 
               icon={<Zap className="h-8 w-8 text-primary" />}
               title="Clarity-First MVP Design"
-              description="We turn complex ideas into simple, engaging interfaces that users actually enjoy using.
-
-"
+              description="We turn complex ideas into simple, engaging interfaces that users actually enjoy using."
             />
             
             <FeatureCard 
@@ -60,8 +58,8 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
       <div className="mb-4 p-2 w-12 h-12 rounded-lg bg-background/60 border border-border/30 flex items-center justify-center">
         {icon}
       </div>
-      <h3 className="text-xl font-manrope font-semibold mb-3 group-hover:text-primary transition-colors text-left">{title}</h3>
-      <p className="text-muted-foreground text-left">{description}</p>
+      <h3 className="text-xl font-helvetica font-normal mb-3 group-hover:text-primary transition-colors text-left">{title}</h3>
+      <p className="text-muted-foreground font-helvetica text-left">{description}</p>
     </div>
   )
 }

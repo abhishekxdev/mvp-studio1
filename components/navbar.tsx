@@ -22,24 +22,24 @@ export function Navbar() {
                 className="object-contain"
               />
             </div>
-            <span className="font-manrope font-semibold text-lg">MVP Studio</span>
+            <span className="font-helvetica font-normal text-lg">MVP Studio</span>
           </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 ml-8">
-            <Link href="#services" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+            <Link href="#services" className="text-sm font-helvetica font-normal text-foreground/80 hover:text-primary transition-colors">
               Services
             </Link>
             <Link
               href="#work"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-sm font-helvetica font-normal text-muted-foreground transition-colors hover:text-primary"
             >
               Work
             </Link>
-            <Link href="#pricing" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+            <Link href="#pricing" className="text-sm font-helvetica font-normal text-foreground/80 hover:text-primary transition-colors">
               Pricing
             </Link>
-            <Link href="#faq" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+            <Link href="#faq" className="text-sm font-helvetica font-normal text-foreground/80 hover:text-primary transition-colors">
               FAQ
             </Link>
           </nav>
@@ -51,7 +51,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] inline-flex items-center"
             >
-              <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-[Manrope,sans-serif]">
+              <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
                 Let's Build Your Idea
               </span>
             </a>
@@ -76,28 +76,28 @@ export function Navbar() {
             <nav className="px-4 py-6 flex flex-col space-y-4">
               <Link 
                 href="#services" 
-                className="text-base font-medium py-2 hover:text-primary transition-colors"
+                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
               </Link>
               <Link 
                 href="#work" 
-                className="text-base font-medium py-2 hover:text-primary transition-colors"
+                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Work
               </Link>
               <Link 
                 href="#pricing" 
-                className="text-base font-medium py-2 hover:text-primary transition-colors"
+                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Pricing
               </Link>
               <Link 
                 href="#faq" 
-                className="text-base font-medium py-2 hover:text-primary transition-colors"
+                className="text-base font-helvetica font-normal py-2 hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 FAQ
@@ -109,7 +109,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="px-6 py-3 rounded-full border border-white/10 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] w-full flex items-center justify-center"
                 >
-                  <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-[Manrope,sans-serif]">
+                  <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
                     Book a Call
                   </span>
                 </a>

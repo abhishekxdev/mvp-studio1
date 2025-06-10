@@ -20,18 +20,18 @@ export function FooterSection() {
                   className="object-contain"
                 />
               </div>
-              <span className="font-manrope font-semibold text-xl">MVP Studio</span>
+              <span className="font-helvetica font-normal text-xl">MVP Studio</span>
             </div>
             
-            <p className="text-muted-foreground mb-6 max-w-md">
+            <p className="text-muted-foreground font-helvetica mb-6 max-w-md text-left">
             Your next product deserves better than templates. Let's build it right.
             </p>
           </div>
           
           <div className="md:col-span-1">
-            <h3 className="font-manrope font-semibold text-lg mb-4">Contact</h3>
-            <div className="space-y-3 text-muted-foreground">
-              <p>support@mvpstudio.in</p>
+            <h3 className="font-helvetica font-normal text-lg mb-4 text-left">Contact</h3>
+            <div className="space-y-3 text-muted-foreground text-left">
+              <p className="font-helvetica">support@mvpstudio.in</p>
               <p></p>
               <a
                 href="https://calendly.com/vishnoiabhishek29/30min"
@@ -39,14 +39,14 @@ export function FooterSection() {
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-full border border-indigo-500/20 bg-[radial-gradient(35%_63%_at_50%_50%,_#6366f1_0%,_#4338ca_100%)] shadow-[inset_0_1px_3px_rgba(255,255,255,0.3),_0_4px_10px_rgba(99,102,241,0.3)] transition-all duration-300 hover:brightness-110 active:scale-[0.98] inline-flex items-center"
               >
-                <span className="text-center font-bold text-[16px] tracking-[-0.02em] text-white font-[Manrope,sans-serif]">
+                <span className="text-center font-helvetica font-normal text-[16px] tracking-[-0.02em] text-white">
                   Book a Call
                 </span>
               </a>
             </div>
           </div>
 
-          <div className="md:col-span-1 flex justify-end items-start">
+          <div className="md:col-span-1 flex justify-start items-start">
             <div className="relative w-68 h-68 -mt-20">
               <img
                 src="/images/callbook.png"

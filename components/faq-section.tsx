@@ -44,10 +44,10 @@ export function FaqSection() {
   return (
     <section className="w-full py-20 md:py-24 relative" id="faq">
       <div className="relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <div className="flex flex-col items-center space-y-4">
-            <p className="text-sm uppercase tracking-wider text-primary/80 font-medium">FAQs</p>
-            <h2 className="text-3xl md:text-4xl font-manrope font-semibold tracking-tight">
+        <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start space-y-4">
+            <p className="text-sm uppercase tracking-wider text-primary/80 font-helvetica font-normal">FAQs</p>
+            <h2 className="text-3xl md:text-4xl font-helvetica font-normal tracking-tight text-left">
               Have Questions? We Have Answers
             </h2>
           </div>
@@ -60,10 +60,10 @@ export function FaqSection() {
                   value={`item-${index}`}
                   className="border border-border/20 bg-card/10 rounded-lg px-6 py-2"
                 >
-                  <AccordionTrigger className="text-left font-manrope font-semibold hover:text-primary hover:no-underline">
+                  <AccordionTrigger className="text-left font-helvetica font-normal hover:text-primary hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pt-2 pb-4">
+                  <AccordionContent className="text-muted-foreground font-helvetica pt-2 pb-4 text-left">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

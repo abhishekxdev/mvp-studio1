@@ -57,17 +57,17 @@ const plans = [
 export function PricingSection() {
   return (
     <div className="py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-base font-semibold leading-7 text-primary">Pricing</h2>
-          <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
+      <div className="mx-auto">
+        <div className="text-left">
+          <h2 className="text-base font-helvetica font-normal leading-7 text-primary">Pricing</h2>
+          <p className="mt-2 text-4xl font-helvetica font-normal tracking-tight sm:text-5xl text-left">
             Choose the right plan for your needs
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-muted-foreground">
+        <p className="mt-6 text-lg leading-8 text-muted-foreground font-helvetica text-left">
           We offer flexible pricing plans to help you get started with your project. All plans include a free consultation.
         </p>
-        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-12 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-12">
+        <div className="isolate mt-16 grid max-w-md grid-cols-1 gap-y-12 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-12">
           {plans.map((plan, planIdx) => (
             <motion.div
               key={plan.name}
@@ -82,7 +82,7 @@ export function PricingSection() {
               )}
             >
               {plan.highlighted && (
-                <div className="absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-primary to-primary/80 px-3 py-2 text-sm font-semibold leading-6 text-white">
+                <div className="absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-primary to-primary/80 px-3 py-2 text-sm font-helvetica font-normal leading-6 text-white">
                   Most popular
                 </div>
               )}
@@ -90,17 +90,17 @@ export function PricingSection() {
                 <div className="flex items-center justify-between gap-x-4">
                   <h3
                     className={cn(
-                      'text-lg font-semibold leading-8',
+                      'text-lg font-helvetica font-normal leading-8',
                       plan.highlighted ? 'text-white' : 'text-gray-900'
                     )}
                   >
                     {plan.name}
                   </h3>
                 </div>
-                <p className="mt-4 text-sm leading-6 text-muted-foreground">{plan.description}</p>
+                <p className="mt-4 text-sm leading-6 text-muted-foreground font-helvetica">{plan.description}</p>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                  <span className="text-4xl font-bold tracking-tight">{plan.price}</span>
-                  <span className="text-sm font-semibold leading-6">/project</span>
+                  <span className="text-4xl font-helvetica font-normal tracking-tight">{plan.price}</span>
+                  <span className="text-sm font-helvetica font-normal leading-6">/project</span>
                 </p>
                 <ul role="list" className="mt-8 space-y-3 text-sm leading-6">
                   {plan.features.map((feature) => (
@@ -112,7 +112,7 @@ export function PricingSection() {
                         )}
                         aria-hidden="true"
                       />
-                      {feature}
+                      <span className="font-helvetica">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -121,7 +121,7 @@ export function PricingSection() {
                 href="https://calendly.com/vishnoiabhishek29/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 block rounded-full px-6 py-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] text-white border border-white/10"
+                className="mt-8 block rounded-full px-6 py-3 text-center text-sm font-helvetica font-normal leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:from-black/90 hover:via-gray-900/90 hover:to-black/90 active:scale-[0.98] text-white border border-white/10"
               >
                 Book a Call
               </a>
