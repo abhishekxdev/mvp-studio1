@@ -10,8 +10,8 @@ export function FooterSection() {
         {/* Main Content */}
         <div className="mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-helvetica font-normal mb-12 text-left text-white leading-tight">
-            Let's Build Something<br />
-            People Remember
+           Build Your Idea<br />
+            In 2 Weeks
           </h1>
           
           <div className="flex flex-col md:flex-row gap-4 items-start">
