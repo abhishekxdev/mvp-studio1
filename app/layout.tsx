@@ -12,6 +12,24 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'MVP Studio',
   description: 'We build MVPs that founders love',
+  openGraph: {
+    title: 'MVP Studio',
+    description: 'We build MVPs that founders love',
+    images: [
+      {
+        url: '/images/open.png',
+        width: 1200,
+        height: 630,
+        alt: 'MVP Studio - We build MVPs that founders love',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MVP Studio',
+    description: 'We build MVPs that founders love',
+    images: ['/images/open.png'],
+  },
 };
 
 export default function RootLayout({
