@@ -29,10 +29,13 @@ export function AnimatedGroup({
             {React.Children.map(children, (child) => {
                 if (!React.isValidElement(child)) return child
 
-                return React.cloneElement(child, {
-                    variants: variants?.item,
-                })
+                return React.cloneElement(
+                    child as React.ReactElement<HTMLMotionProps<any>>,
+                    {
+                        variants: variants?.item,
+                    }
+                )
             })}
         </motion.div>
     )
-} 
+}
