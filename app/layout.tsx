@@ -10,25 +10,59 @@ import { FooterSection } from '@/components/footer-section'
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MVP Studio',
-  description: 'We build MVPs that founders love',
+  title: 'MVP Studio - We build MVPs that founders love',
+  description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses. Expert development team specializing in rapid MVP creation.',
+  keywords: ['MVP development', 'startup development', 'product development', 'founders', 'MVP Studio', 'rapid prototyping', 'startup MVP'],
+  authors: [{ name: 'MVP Studio' }],
+  creator: 'MVP Studio',
+  publisher: 'MVP Studio',
+  metadataBase: new URL('https://mvpstudio.in'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'MVP Studio',
-    description: 'We build MVPs that founders love',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://mvpstudio.in',
+    siteName: 'MVP Studio',
+    title: 'MVP Studio - We build MVPs that founders love',
+    description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
     images: [
       {
         url: '/images/opengraph.png',
         width: 1200,
         height: 630,
         alt: 'MVP Studio - We build MVPs that founders love',
+        type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MVP Studio',
-    description: 'We build MVPs that founders love',
-    images: ['/images/opengraph.png'],
+    site: '@mvpstudio',
+    creator: '@mvpstudio',
+    title: 'MVP Studio - We build MVPs that founders love',
+    description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
+    images: [
+      {
+        url: '/images/opengraph.png',
+        alt: 'MVP Studio - We build MVPs that founders love',
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code', // Replace with actual verification code
   },
 };
 
@@ -39,6 +73,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className={`${inter.className} bg-black text-white min-h-screen`} style={{
         backgroundImage: 'url(/images/wallop.jpeg)',
         backgroundSize: 'cover',

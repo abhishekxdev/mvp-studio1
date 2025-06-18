@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mvpstudio.in
+
+# Sitemaps
+Sitemap: https://mvpstudio.in/sitemap.xml

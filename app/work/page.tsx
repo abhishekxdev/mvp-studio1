@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft, ExternalLink } from 'lucide-react'
+import type { Metadata } from 'next'
 
 const workItems = [
     {
@@ -71,6 +72,24 @@ const workItems = [
         technologies: []
     }
 ]
+
+// Generate metadata for the work page
+export const metadata: Metadata = {
+    title: 'Our Work - MVP Studio Portfolio',
+    description: 'Explore our portfolio of successful MVPs and digital products. See how we\'ve helped founders validate ideas, secure funding, and scale their businesses.',
+    openGraph: {
+        title: 'Our Work - MVP Studio Portfolio',
+        description: 'Explore our portfolio of successful MVPs and digital products. See how we\'ve helped founders validate ideas, secure funding, and scale their businesses.',
+        images: [
+            {
+                url: '/images/opengraph.png',
+                width: 1200,
+                height: 630,
+                alt: 'MVP Studio Portfolio - Our Work',
+            },
+        ],
+    },
+}
 
 export default function WorkPage() {
     return (
