@@ -74,7 +74,7 @@ const workItems = [
 
 export default function WorkPage() {
     return (
-        <main className="min-h-screen bg-black text-white">
+        <main className="min-h-screen text-white">
             <div className="pt-32 pb-20">
                 {/* Header */}
                 <div className="mb-12">
@@ -153,7 +153,7 @@ function WorkCard({ item }: WorkCardProps) {
                             className="object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 
                 {/* Content Section */}
