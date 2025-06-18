@@ -16,7 +16,7 @@ export function WhyUsSection() {
           </div>
           
           <div className="mt-16 w-full">
-            <div className="rounded-xl border border-white/20 bg-black backdrop-blur-sm overflow-hidden">
+            <div className="rounded-xl border border-white/20 backdrop-blur-sm overflow-hidden">
               <FeatureCard 
                 icon={<Lightbulb className="h-8 w-8 text-white" />} 
                 title="Built for Speed & Scale"
@@ -61,7 +61,7 @@ interface FeatureCardProps {
 
 function FeatureCard({ icon, title, description, isLast }: FeatureCardProps) {
   return (
-    <div className={`p-6 hover:bg-black/80 transition-all duration-300 group ${!isLast ? 'border-b-0' : ''}`}>
+    <div className={`p-6 hover:bg-white/5 transition-all duration-300 group ${!isLast ? 'border-b-0' : ''}`}>
       <div className="flex items-start space-x-4">
         <div className="flex-shrink-0 p-3 w-14 h-14 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
           {icon}
