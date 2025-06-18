@@ -74,7 +74,7 @@ const workItems = [
 
 export default function WorkPage() {
     return (
-        <main className="min-h-screen bg-black text-white">
+        <main className="min-h-screen text-white">
             <div className="pt-32 pb-20">
                 {/* Header */}
                 <div className="mb-12">
@@ -131,7 +131,7 @@ interface WorkCardProps {
 
 function WorkCard({ item }: WorkCardProps) {
     return (
-        <div className="group relative overflow-hidden rounded-xl border border-white/20 hover:bg-black/80 transition-all duration-300 backdrop-blur-sm">
+        <div className="group relative overflow-hidden rounded-xl border border-white/20 hover:bg-white/5 transition-all duration-300 backdrop-blur-sm">
             <div className="flex flex-col lg:flex-row">
                 {/* Image Section - Wider for better visibility */}
                 <div className="relative w-full lg:w-2/3 h-80 lg:h-96 overflow-hidden rounded-l-xl">
