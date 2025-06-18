@@ -74,7 +74,7 @@ export function PricingSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: planIdx * 0.1 }}
-              className="flex flex-col justify-between rounded-3xl p-8 ring-1 ring-white/20 xl:p-10 bg-black hover:bg-black/80 transition-all duration-300 backdrop-blur-sm"
+              className="flex flex-col justify-between rounded-3xl p-8 ring-1 ring-white/20 xl:p-10 hover:bg-white/5 transition-all duration-300 backdrop-blur-sm"
             >
               {plan.highlighted && (
                 <div className="absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-primary to-primary/80 px-3 py-2 text-sm font-helvetica font-normal leading-6 text-white">
