@@ -108,6 +108,7 @@ export function HeroSection() {
                                 preset="fade-in-blur"
                                 per="line"
                             >
+<<<<<<< HEAD
                                 From{" "}
                                 <span className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
                                     Idea
@@ -119,6 +120,15 @@ export function HeroSection() {
                                 {" "}MVPs That{" "}
                                 <span className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
                                     Take Over
+=======
+                                Start Smart with MVPs that{" "}
+                                <span className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
+                                    Dominate
+                                </span>
+                                {" "}&{" "}
+                                <span className="bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
+                                    Scale
+>>>>>>> 73c0e69b8b5186ba97f9b92bd0670e2054e43d4c
                                 </span>
                             </TextEffect>
                            

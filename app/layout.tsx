@@ -39,6 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+<<<<<<< HEAD
       <body className={`${inter.className} bg-black text-white min-h-screen`} style={{
         backgroundImage: 'url(/images/wallop.jpeg)',
         backgroundSize: 'cover',
@@ -46,6 +47,9 @@ export default function RootLayout({
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed'
       }}>
+=======
+      <body className={`${inter.className} bg-black text-white min-h-screen`}>
+>>>>>>> 73c0e69b8b5186ba97f9b92bd0670e2054e43d4c
         <div className="max-w-5xl mx-auto px-4 md:px-6">
           <Navbar />
           {children}
