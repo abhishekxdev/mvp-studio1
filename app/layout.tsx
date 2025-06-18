@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
     images: [
       {
-        url: '/images/opengraph.png',
+        url: 'https://mvpstudio.in/images/opengraph.png',
         width: 1200,
         height: 630,
         alt: 'MVP Studio - We build MVPs that founders love',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
     images: [
       {
-        url: '/images/opengraph.png',
+        url: 'https://mvpstudio.in/images/opengraph.png',
         alt: 'MVP Studio - We build MVPs that founders love',
       },
     ],
@@ -79,6 +79,11 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <meta property="og:image" content="https://mvpstudio.in/images/opengraph.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:image" content="https://mvpstudio.in/images/opengraph.png" />
       </head>
       <body className={`${inter.className} bg-black text-white min-h-screen`} style={{
         backgroundImage: 'url(/images/wallop.jpeg)',
