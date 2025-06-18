@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowLeft, ExternalLink } from 'lucide-react'
-import type { Metadata } from 'next'
 
 const workItems = [
     {
@@ -73,27 +72,9 @@ const workItems = [
     }
 ]
 
-// Generate metadata for the work page
-export const metadata: Metadata = {
-    title: 'Our Work - MVP Studio Portfolio',
-    description: 'Explore our portfolio of successful MVPs and digital products. See how we\'ve helped founders validate ideas, secure funding, and scale their businesses.',
-    openGraph: {
-        title: 'Our Work - MVP Studio Portfolio',
-        description: 'Explore our portfolio of successful MVPs and digital products. See how we\'ve helped founders validate ideas, secure funding, and scale their businesses.',
-        images: [
-            {
-                url: '/images/opengraph.png',
-                width: 1200,
-                height: 630,
-                alt: 'MVP Studio Portfolio - Our Work',
-            },
-        ],
-    },
-}
-
 export default function WorkPage() {
     return (
-        <main className="min-h-screen text-white">
+        <main className="min-h-screen bg-black text-white">
             <div className="pt-32 pb-20">
                 {/* Header */}
                 <div className="mb-12">
@@ -150,7 +131,7 @@ interface WorkCardProps {
 
 function WorkCard({ item }: WorkCardProps) {
     return (
-        <div className="group relative overflow-hidden rounded-xl border border-white/20 hover:bg-white/5 transition-all duration-300 backdrop-blur-sm">
+        <div className="group relative overflow-hidden rounded-xl border border-white/20 hover:bg-black/80 transition-all duration-300 backdrop-blur-sm">
             <div className="flex flex-col lg:flex-row">
                 {/* Image Section - Wider for better visibility */}
                 <div className="relative w-full lg:w-2/3 h-80 lg:h-96 overflow-hidden rounded-l-xl">
@@ -172,7 +153,7 @@ function WorkCard({ item }: WorkCardProps) {
                             className="object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 
                 {/* Content Section */}
