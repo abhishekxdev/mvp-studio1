@@ -15,69 +15,36 @@ export function WhyUsSection() {
             </h2>
           </div>
           
-<<<<<<< HEAD
           <div className="mt-16 w-full">
             <div className="rounded-xl border border-white/20 bg-black backdrop-blur-sm overflow-hidden">
               <FeatureCard 
-                icon={<Lightbulb className="h-8 w-8 text-white" />}
+                icon={<Lightbulb className="h-8 w-8 text-white" />} 
                 title="Built for Speed & Scale"
                 description="Your MVP is developed using modern, scalable tech—ready to grow with your users and business."
                 isLast={false}
               />
-              
               <div className="border-t border-white/20"></div>
-              
               <FeatureCard 
-                icon={<Users className="h-8 w-8 text-white" />}
+                icon={<Users className="h-8 w-8 text-white" />} 
                 title="One Project. One Focus."
                 description="We don't juggle clients. Your MVP gets our full attention, every step of the way."
                 isLast={false}
               />
-              
               <div className="border-t border-white/20"></div>
-              
               <FeatureCard 
-                icon={<Zap className="h-8 w-8 text-white" />}
+                icon={<Zap className="h-8 w-8 text-white" />} 
                 title="Clarity-First MVP Design"
                 description="We turn complex ideas into simple, engaging interfaces that users actually enjoy using."
                 isLast={false}
               />
-              
               <div className="border-t border-white/20"></div>
-              
               <FeatureCard 
-                icon={<Rocket className="h-8 w-8 text-white" />}
+                icon={<Rocket className="h-8 w-8 text-white" />} 
                 title="Built for Real-World Results"
                 description="We don't just build MVPs — we build traction. Funding, users, and growth start with the right product foundation."
                 isLast={true}
               />
             </div>
-=======
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-16 w-full">
-            <FeatureCard 
-              icon={<Lightbulb className="h-8 w-8 text-white" />}
-              title="Built for Speed & Scale"
-              description="Your MVP is developed using modern, scalable tech—ready to grow with your users and business."
-            />
-            
-            <FeatureCard 
-              icon={<Users className="h-8 w-8 text-white" />}
-              title="One Project. One Focus."
-              description="We don't juggle clients. Your MVP gets our full attention, every step of the way."
-            />
-            
-            <FeatureCard 
-              icon={<Zap className="h-8 w-8 text-white" />}
-              title="Clarity-First MVP Design"
-              description="We turn complex ideas into simple, engaging interfaces that users actually enjoy using."
-            />
-            
-            <FeatureCard 
-              icon={<Rocket className="h-8 w-8 text-white" />}
-              title="Built for Real-World Results"
-              description="We don't just build MVPs — we build traction. Funding, users, and growth start with the right product foundation."
-            />
->>>>>>> 73c0e69b8b5186ba97f9b92bd0670e2054e43d4c
           </div>
         </div>
       </div>
@@ -89,7 +56,6 @@ interface FeatureCardProps {
   icon: React.ReactNode
   title: string
   description: string
-<<<<<<< HEAD
   isLast: boolean
 }
 
@@ -105,18 +71,6 @@ function FeatureCard({ icon, title, description, isLast }: FeatureCardProps) {
           <p className="text-white/80 font-helvetica text-left">{description}</p>
         </div>
       </div>
-=======
-}
-
-function FeatureCard({ icon, title, description }: FeatureCardProps) {
-  return (
-    <div className="p-6 rounded-xl border border-white/20 bg-black hover:bg-black/80 transition-all duration-300 group backdrop-blur-sm">
-      <div className="mb-4 p-3 w-14 h-14 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center">
-        {icon}
-      </div>
-      <h3 className="text-xl font-helvetica font-normal mb-3 group-hover:text-white transition-colors text-left text-white">{title}</h3>
-      <p className="text-white/80 font-helvetica text-left">{description}</p>
->>>>>>> 73c0e69b8b5186ba97f9b92bd0670e2054e43d4c
     </div>
   )
 }
