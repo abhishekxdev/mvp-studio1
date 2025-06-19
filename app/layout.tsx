@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
     images: [
       {
-        url: 'https://mvpstudio.in/images/opengraph1.png',
+        url: 'https://mvpstudio.in/images/open.jpeg',
         width: 1200,
         height: 630,
         alt: 'MVP Studio - We build MVPs that founders love',
-        type: 'image/png',
+        type: 'image/jpeg',
       },
     ],
   },
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: 'MVP Studio - We build MVPs that founders love',
     description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
     images: {
-      url: 'https://mvpstudio.in/images/opengraph1.png',
+      url: 'https://mvpstudio.in/images/open.jpeg',
       alt: 'MVP Studio - We build MVPs that founders love',
       width: 1200,
       height: 630,
