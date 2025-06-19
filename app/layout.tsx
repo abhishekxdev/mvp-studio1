@@ -46,6 +46,8 @@ export const metadata: Metadata = {
     images: {
       url: 'https://mvpstudio.in/images/opengraph1.png',
       alt: 'MVP Studio - We build MVPs that founders love',
+      width: 1200,
+      height: 630,
     },
   },
   robots: {
@@ -71,6 +73,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* Additional meta tags for better compatibility */}
+        <meta name="twitter:domain" content="mvpstudio.in" />
+        <meta property="twitter:url" content="https://mvpstudio.in" />
+      </head>
       <body className={`${inter.className} bg-black text-white min-h-screen`} style={{
         backgroundImage: 'url(/images/wallop.jpeg)',
         backgroundSize: 'cover',
