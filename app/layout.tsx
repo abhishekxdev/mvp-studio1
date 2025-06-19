@@ -73,11 +73,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <head>
-        {/* Additional meta tags for better compatibility */}
-        <meta name="twitter:domain" content="mvpstudio.in" />
-        <meta property="twitter:url" content="https://mvpstudio.in" />
-      </head>
       <body className={`${inter.className} bg-black text-white min-h-screen`} style={{
         backgroundImage: 'url(/images/wallop.jpeg)',
         backgroundSize: 'cover',
