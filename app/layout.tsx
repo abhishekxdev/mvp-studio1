@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
     images: [
       {
-        url: '/images/opengraph.jpeg',
+        url: 'https://mvpstudio.in/images/opengraph1.png',
         width: 1200,
         height: 630,
         alt: 'MVP Studio - We build MVPs that founders love',
-        type: 'image/jpeg',
+        type: 'image/png',
       },
     ],
   },
@@ -43,14 +43,10 @@ export const metadata: Metadata = {
     creator: '@mvpstudio',
     title: 'MVP Studio - We build MVPs that founders love',
     description: 'From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses.',
-    images: [
-      {
-        url: '/images/opengraph.jpeg',
-        alt: 'MVP Studio - We build MVPs that founders love',
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: {
+      url: 'https://mvpstudio.in/images/opengraph1.png',
+      alt: 'MVP Studio - We build MVPs that founders love',
+    },
   },
   robots: {
     index: true,
@@ -75,27 +71,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <head>
-        {/* Additional meta tags for better Twitter compatibility */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@mvpstudio" />
-        <meta name="twitter:creator" content="@mvpstudio" />
-        <meta name="twitter:title" content="MVP Studio - We build MVPs that founders love" />
-        <meta name="twitter:description" content="From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses." />
-        <meta name="twitter:image" content="https://mvpstudio.in/images/opengraph.jpeg" />
-        <meta name="twitter:image:alt" content="MVP Studio - We build MVPs that founders love" />
-        
-        {/* Additional OpenGraph tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="MVP Studio - We build MVPs that founders love" />
-        <meta property="og:description" content="From idea to impact. We build high-quality MVPs that help founders validate ideas, secure funding, and scale their businesses." />
-        <meta property="og:image" content="https://mvpstudio.in/images/opengraph.jpeg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:url" content="https://mvpstudio.in" />
-        <meta property="og:site_name" content="MVP Studio" />
-      </head>
       <body className={`${inter.className} bg-black text-white min-h-screen`} style={{
         backgroundImage: 'url(/images/wallop.jpeg)',
         backgroundSize: 'cover',
